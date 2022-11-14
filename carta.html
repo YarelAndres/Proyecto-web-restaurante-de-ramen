@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#" />
+        <title>Carta</title>
+
+        <!-- Links para font-family estilo japones -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Gideon+Roman&family=Merriweather+Sans:wght@300&family=Roboto&family=Roboto+Serif:wght@300&family=Sofia&display=swap" rel="stylesheet">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles_carta.css">
+
+        <!-- jQuery. Script de libreria jQuery, desde un servidor externo -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <section id="global">
+            <header>
+                <div id="logo">
+                    <h1>Ramen JS</h1>
+                    <div id="logo_img_content">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="carta.html">Carta</a></li>
+                        <li><a href="ingredientes.html">Ingredientes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Contenido -->
+            <div>
+                <h2>Nuestra carta</h2>
+                <h3>Elaborada con los mejores ingredientes sanos y deliciosos</h3>       
+            </div>
+
+            <div class="box_container">
+                <div class="box">
+                    <img class="image_ramen" id="ramen1" src="img/carta/corralCurryRamen.jpg"  title="Corral Curry Ramen">
+                </div>
+                <div class="box">
+                    <img class="image_ramen" id="ramen2" src="img/carta/curryRamen.jpg" title="Curry Ramen">
+                </div>
+            </div>
+
+            <div class="box_container">
+                <div class="box">
+                    <img class="image_ramen" id="ramen3" src="img/carta/KahiwaSoba.jpg" title="Kahiwa Soba">
+                </div>
+                <div class="box">
+                    <img class="image_ramen" id="ramen4" src="img/carta/kimchiChicken.jpg" title="Kimchi Chicken">
+                </div>
+            </div>
+
+            <div class="box_container">
+                <div class="box">
+                    <img class="image_ramen" id="ramen5" src="img/carta/misoRamen.jpg" title="Miso Ramen">
+                </div>
+                <div class="box">
+                    <img class="image_ramen" id="ramen6" src="img/carta/nabeyakyRamen.jpg" title="Nabeyaky Ramen">
+                </div>
+            </div>
+
+            <div class="box_container">
+                <div class="box">
+                    <img class="image_ramen" id="ramen7" src="img/carta/spicyThai.jpg" title="Spicy Thai">
+                </div>
+                <div class="box">
+                    <img class="image_ramen" id="ramen8" src="img/carta/tampopoRamen.jpg" title="Tampopo Ramen">
+                </div>
+            </div>
+
+            <div class="box_container">
+                <div class="box">
+                    <img class="image_ramen" id="ramen9" src="img/carta/TempuraSoba.jpg" title="Tempura Soba">
+                </div>
+                <div class="box">
+                    <img class="image_ramen" id="ramen10" src="img/carta/veganRamen.jpg" title="Vegan Ramen">
+                </div>
+            </div>
+        </section>    
+        
+        <footer>
+            <div id="span_footer">
+                <span>Ramen JS Yarel Andrés Company &copy;</span> 
+            </div>
+
+            <div class="container_img_footer">
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" title="Instagram"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.gmail.com/" target="_blank"><img class="tight" src="img/email.png" title="Gmail"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" title="Facebook"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.youtube.com/" target="_blank"><img class="tight" src="img/youtube.png" title="Youtube"></a>
+            </div>
+        </footer>
+
+        <div id="arrow_up">
+            <img src="img/arrow_up.png">
+        </div>
+
+        <!-- POP-UP -->
+        <div class="overlay" id="overlay">
+        </div>
+        <div class="pop-up" id="pop-up">
+            <!-- Flecha para cerrar la ventana emergente  -->
+            <img class="arrow_pop-up" id="close_pop-up" src="img/carta/arrow_left.png">
+            <!-- Contenedor de datos de ramen -->
+            <div id="ramen_container">
+            </div>
+        </div>
+    </body>
+</html>

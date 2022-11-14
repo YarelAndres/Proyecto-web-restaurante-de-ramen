@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#" />
+        <title>Contacto</title>
+
+        <!-- Links para font-family estilo japones -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Gideon+Roman&family=Merriweather+Sans:wght@300&family=Roboto&family=Roboto+Serif:wght@300&family=Sofia&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles_contacto.css">
+
+        <!-- jQuery. Script de libreria jQuery, desde un servidor externo. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <section id="global">
+            <header>
+                <div id="logo">
+                    <h1>Ramen JS</h1>
+                    <div id="logo_img_content">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="carta.html">Carta</a></li>
+                        <li><a href="ingredientes.html">Ingredientes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Contenido -->
+            <h2>Contacto</h2>     
+
+            <div id="container">
+                <div id="form_container">
+                <p>¿Necesitas contactar con nosotros? ¿Quieres hacernos alguna sugerencia? Te escuchamos:</p><br>
+
+                    <!-- Formulario -->
+                    <form action="#name" id="contact_form">
+                        <div class="input_group">
+                            <input type="text" id="name" class="form_input">
+                            <label for="name" class="label">Nombre</label>
+                            <p class="mistake">El campo Nombre es obligatorio</p>
+                        </div>
+
+                        <div class="input_group">
+                            <input type="text" id="surname" class="form_input">
+                            <label for="surname" class="label">Apellidos</label>
+                            <p class="mistake">El campo Apellidos es obligatorio</p>
+                        </div>
+
+                        <div class="input_group">
+                            <input type="email" id="email" class="form_input">
+                            <label for="email" class="label">Email</label>
+                            <p class="mistake">El campo Email es obligatorio</p>
+                        </div>
+
+                        <div class="input_group">
+                            <textarea id="message" class="form_input" cols="40" rows="14"></textarea>
+                            <label for="message" class="label">Mensaje</label>
+                            <p class="mistake">El campo Mensaje es obligatorio</p>
+                        </div>
+
+                        <div class="input_group">
+                            <input type="submit" id="send" value="Enviar">
+                        </div>
+
+                        <div id="confirmation">
+                            <div id="check">
+                                <img src="img/contact/check.png">
+                            </div>
+                            <p>La solicitud ha sido enviada correctamente</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>    
+
+        <footer>
+            <div id="span_footer">
+                <span>Ramen JS Yarel Andrés Company &copy;</span> 
+            </div>
+
+            <div class="container_img_footer">
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" title="Instagram"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.gmail.com/" target="_blank"><img class="tight" src="img/email.png" title="Gmail"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" title="Facebook"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.youtube.com/" target="_blank"><img class="tight" src="img/youtube.png" title="Youtube"></a>
+            </div>
+        </footer>
+
+        <div id="arrow_up">
+            <img src="img/arrow_up.png">
+        </div>
+    </body>
+</html>

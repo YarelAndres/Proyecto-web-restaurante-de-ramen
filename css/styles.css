@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url('../img/index/f_inicio.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+/* Contenedor de cabecera y contenido */
+#global{
+    width: 80%;
+    margin: 30px auto 0;
+    padding: 25px;
+    background: rgb(224, 220, 220);
+    box-shadow: 0 0 4px gray;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+/* Encabezado */
+header{
+    margin-top: 10px;
+}
+
+/* Contenedor logo */
+#logo{
+    background: #2487a0;
+    width: 420px;
+    height: 80px;
+    margin: 0 0 40px 15px;
+    border-radius: 2px;
+}
+
+/* Título logo */
+#logo h1{
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+    font-size: 39px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    line-height: 80px;
+    width: 75%;
+    text-align: center;
+    float: left;
+}
+
+
+/* Contenedor imagen de logo */
+#logo_img_content{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+/* Imagen de logo */
+#logo_img_content img{
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+}
+
+/* Menú de navegación */
+#menu{
+    font-family: Helvetica, Arial;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* Lista del menú de navegación */
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+/* Elementos de la lista del menú de navegación */ 
+#menu ul li{
+    height: 43px;
+    display: inline-block;
+    transition: all 400ms;
+    background: #2487a0;
+    margin: 0px 64px;
+    border-radius: 4px;
+}
+
+#menu ul li:hover{
+    background: #2ea8c7;
+    transform: scale(1.15);
+}
+
+/* Enlaces creados en los elementos li dentro del menú */
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0px 30px;
+}
+
+/* Slider */
+.bx-wrapper, .bx-viewport{
+    height: 500px !important;
+    margin: 60px auto 0;  
+    border: none;
+}
+
+.bx-viewport{
+    border: 4px solid #99a9b9;
+}
+
+/* Contenido */
+.content{
+    padding: 0 20px;
+    margin-top: 40px;
+    overflow: auto;
+}
+
+/* Contenedor de párrafos e imágenes dentro de contenido */
+.history{
+    width: 55%;
+    float: left;
+}
+
+
+
+.history h2{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.history p{
+    margin: 35px 0 20px 0;
+    line-height: 30px;
+    font-size: 24px;
+    text-align: justify;
+    color: #333;
+}
+
+/* Contenedor de imagen */
+.image{
+    width: 370px;
+    height: 250px;
+    margin: 150px 0 0 65px;
+    border: 2px solid rgb(155 113 37);
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgb(0 0 0 / 70%);
+    float: left;
+}
+
+/* Imagen */
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Ajuste de contenedor imagen izquierda */
+.image_left{
+    margin: 60px 55px 0 10px;
+}
+
+.animate{
+    opacity: 0;
+    transition: all 2000ms;
+}
+
+
+/* ESTILOS PARA TODO EL SITIO WEB */
+
+
+/* Títulos de la página web */
+h2{
+    font-family: cursive; 
+    font-size: xxx-large;
+    color: rgb(41, 40, 40);
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* Subtítulos de carta e ingredientes */
+h3{
+    margin: 35px 0 20px 0;
+    line-height: 30px;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer{
+    height: 60px;
+    background: rgba(51, 51, 51, 0.7);
+    margin: 55px auto 0;
+    padding: 0 20px;
+    width: 80.8%;
+    border-radius: 3px;
+    display: flex;
+}
+
+#span_footer{
+    padding-top: 24px;
+    margin-right: 500px;
+}
+
+#span_footer span{
+    font-family: Helvetica, Arial;
+    color: white;
+}
+
+/* Contenedor imagen de footer */
+.container_img_footer{
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding: 10px 40px 0 0;
+}
+
+/* Imagen de footer */
+.container_img_footer img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: all 400ms;
+}
+
+/* Imagen de footer comprimida */
+.container_img_footer .tight{
+    padding-top: 2px;
+    width: 92%;
+    height: 90%;
+}
+
+.container_img_footer img:hover{
+    opacity: 1;
+    transition: all 400ms;
+}
+
+/* Contenedor de imagen de flecha */
+#arrow_up{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+/* Imagen de flecha */
+#arrow_up img{
+    width: 37px;
+    height: 37px;
+    margin: 55px 0 0 25px;
+    opacity: 0.6;
+}
+
+#arrow_up img:hover{
+    opacity: 1;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+
+
+

@@ -1,0 +1,210 @@
+body{
+    background: url('../img/ingredients/f_ingredientes.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+/* Contenedor de ingredientes */
+#ingredients_container{
+    padding-left: 30px;
+}
+
+/* Título de cada tipo de ingrediente */
+.title{
+    width: min-content;
+    cursor: pointer;
+    float: left;
+    margin: 0;
+}
+
+/* Contenedor de imágenes de título */
+.title_box{
+    float: right;
+    width: 818px;
+    height: 70px;
+    display: flex;
+}
+
+/* Contenedor de imagen de título */
+.title_img_box{
+    float: left;
+    width: 73px;
+    height: 70px;
+    margin: auto;
+    opacity: 0;
+}
+
+/* Imagen de titulo */
+.img_title{
+    width: 100%;
+    height: 100%;
+}
+
+/* Crea un div en blanco entre elementos para que no se superpongan */
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* Contenedor de imágenes de todos los ingredientes */
+.img_box{
+    width: 200px;
+    height: 130px;
+    float: left;
+    padding: 40px 0px;
+}
+
+/* Imágenes de todos los ingredientes */
+.img_ingredient{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transform: scale(0.8);
+    transition: all 600ms;
+}
+
+/* Todas las imagenes al entrar el puntero en ellas */
+.img_enter{
+    transform: scale(1);
+    transition: all 600ms;
+}
+
+/* Descripción de todos los ingredientes */
+.description{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.description h3{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 22px;
+    text-align: left;
+    opacity: 0;
+}
+
+.description p{
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+    opacity: 0;
+}
+
+/* Cada contenedor de cada tipo de ingrediente */
+.protein_box, .vegetable_box, .noodle_box{
+    overflow: auto;
+}
+
+
+/* ESTILOS DE CADA TIPO DE INGREDIENTES */
+
+/* PROTEINAS */
+
+#title_protein:hover{
+    color: rgb(175, 47, 47);
+    transition: all 400ms;
+}
+
+.img_protein{
+    border: solid 2px rgb(134, 40, 40);
+}
+
+.protein_box h3{
+    color: rgb(175, 47, 47);
+}
+
+
+/* VEGETALES */
+
+#title_vegetable:hover{
+    color: rgb(35, 153, 35);
+    transition: all 400ms;
+}
+
+.img_vegetable{  
+    border: solid 2px rgb(35, 153, 35);
+}
+
+.vegetable_box h3{
+    color: rgb(35, 153, 35);
+}
+
+
+/* FIDEOS */
+
+#title_noodle:hover{
+    color: rgb(207, 181, 63);
+    transition: all 400ms;
+}
+
+.img_noodle{  
+    border: solid 2px rgb(207, 181, 63);
+}
+
+.noodle_box h3{
+    color: rgb(207, 181, 63);
+}
+
+
+/* ANIMACIONES */
+
+.title_img_box.active {
+    animation: imgTitleAnimation 0.8s ease forwards;
+}
+@keyframes imgTitleAnimation{
+    from {
+        transform: translateX(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.title_img_box.inactive {
+    animation: inactiveImgTitleAnimation 0.8s ease forwards;
+}
+@keyframes inactiveImgTitleAnimation{
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(-25px);
+        opacity: 0;
+    }
+}
+
+.description.active h3{
+    animation: titleAnimation 1.2s ease .4s forwards;
+}
+@keyframes titleAnimation{
+    from {
+        transform: translateX(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.description.active p{
+    animation: pAnimation 1.2s ease 1s forwards;
+}
+@keyframes pAnimation{
+    from {
+        transform: translateX(25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+

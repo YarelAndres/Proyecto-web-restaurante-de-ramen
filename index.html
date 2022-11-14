@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#" />
+        <title>Inicio</title>
+        
+        <!-- Links para font-family estilo japones -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Gideon+Roman&family=Merriweather+Sans:wght@300&family=Roboto&family=Roboto+Serif:wght@300&family=Sofia&display=swap" rel="stylesheet">
+
+        <!-- jQuery. Script de libreria jQuery, desde un servidor externo -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Scripts del Slider. Archivos JavaScript y CSS. Son scripts CDN, son librerias de un servidor externo al que hay 
+        que acceder con conexion a internet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <section id="global">
+            <header>
+                <div id="logo">
+                    <h1>Ramen JS</h1>
+                    <div id="logo_img_content">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="carta.html">Carta</a></li>
+                        <li><a href="ingredientes.html">Ingredientes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Slider -->
+            <div id="slider">
+                <div class="bxslider">
+                    <div><img src="img/index/ramen1.jpg" alt="ramen1"></div>
+                    <div><img src="img/index/ramen2.jpg" alt="ramen2"></div>
+                    <div><img src="img/index/ramen3.jpg" alt="ramen3"></div>
+                    <div><img src="img/index/ramen4.jpg" alt="ramen4"></div>
+                    <div><img src="img/index/ramen5.jpg" alt="ramen5"></div>
+                </div> 
+            </div>
+
+            <!-- Contenido -->
+            <section class="content">
+                <div class="history">
+                    <h2 class="animate">Historia del Ramen</h2>
+                    <p>
+                        El Ramen, aunque originario de China, se ha convertido en la actualidad en emblema de la cocina japonesa. La base sobre la que se elabora este delicioso plato en ambos países es la misma, fideos de trigo, no obstante, la versión japonesa ofrece una mayor variedad de sabores. Esta mayor diversidad radica en la manera de elaboración de la sopa o caldo, que constituye la esencia del Ramen, así como los ingredientes con los que se la acompaña (huevo cocido, brotes de bambú y de soja, algas, pastel de pescado, cerdo rostizado, jengibre, setas, repollo, verduras hervidas…). 
+                    </p>
+                </div>
+                <div class="image animate">
+                    <img src="img/index/sopa.jpg" title="Caldo">
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="image animate image_left">
+                    <img src="img/ingredients/f_ingredientes.jpeg" title="Ingredientes">
+                </div>
+                <div class="history">
+                    <p class="p_right"> 
+                        El Ramen se introduce en la gastronomía japonesa a principios del siglo XX y tras la II Guerra Mundial, se convierte en un plato muy popular entre los japoneses, ya que supone una receta exquisita y a la vez económica. Pero es en la década de los 90 cuando se convierte en un auténtico fenómeno gastronómico, pasando de cocinarse de modo sencillo, para ser consumido como guarnición, a ser elaborado de una forma mucho más compleja y sabrosa. Solamente para la elaboración del caldo o sopa se requieren entre 8 y 10 horas de preparación. 
+                    </p>
+                </div>
+            </section>
+        </section>
+        
+        <footer>
+            <div id="span_footer">
+                <span>Ramen JS Yarel Andrés Company &copy;</span> 
+            </div>
+
+            <div class="container_img_footer">
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" title="Instagram"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.gmail.com/" target="_blank"><img class="tight" src="img/email.png" title="Gmail"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" title="Facebook"></a>
+            </div>
+            <div class="container_img_footer">
+                <a href="https://www.youtube.com/" target="_blank"><img class="tight" src="img/youtube.png" title="Youtube"></a>
+            </div>
+        </footer>
+
+        <!-- Icono de flecha para ir al inicio de la página -->
+        <div id="arrow_up">
+            <img src="img/arrow_up.png">
+        </div>
+    </body>
+</html>
